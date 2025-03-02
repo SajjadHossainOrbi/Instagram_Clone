@@ -1,0 +1,265 @@
+body {
+  background-color: white;
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Open Sans",
+    "Helvetica Neue", Arial, sans-serif;
+  color: black;
+  overflow-x: hidden;
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+}
+/* Start sidebar styling */
+.sidebar {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 221px;
+  height: 100vh;
+  background-color: white;
+  color: black;
+  padding: 0.25rem;
+  border-right: 1px solid rgba(128, 128, 128, 0.247);
+}
+
+.logo {
+  width: 115px;
+  margin: 0.5rem 0;
+  padding: 1.25rem;
+  display: block;
+  cursor: pointer;
+}
+
+.link {
+  display: flex;
+  padding: 0.98rem 1rem;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+  transition-property: background-color;
+  border-radius: 10px;
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+.prf {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.link img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+.icon {
+  color: black;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: #cececee4;
+  cursor: pointer;
+}
+/* End Sidebar Styling */
+
+/* Profile top styling start */
+section {
+  margin-left: 100px;
+  margin-right: 45px;
+}
+.profile {
+  width: 100%;
+  margin-left: 100px;
+  display: grid;
+}
+.profile-header {
+  margin-left: 240px;
+  display: grid;
+  grid-template-columns: 215px auto;
+  align-items: center;
+  gap: 110px;
+  margin-bottom: 80px;
+}
+.Dp {
+  padding: 53px;
+  margin-top: -25px;
+  width: 155px;
+  height: 155px;
+  border-radius: 50%;
+}
+.user {
+  display: grid;
+  gap: 30px;
+  margin-top: 40px;
+}
+.user-top {
+  display: grid;
+  grid-template-columns: auto 535px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+}
+.name {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.name p {
+  display: flex;
+  justify-content: flex-start;
+}
+.v-icon {
+  width: 18px;
+  height: 18px;
+  gap: 10px;
+}
+.statistics {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  gap: 20px;
+  font-size: 15px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-btn {
+  background-color: rgb(225 225 225);
+  color: black;
+  height: 30px;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.edit-btn:hover {
+  background-color: rgb(210, 209, 209);
+  transition: all 300ms;
+}
+
+.add-btn {
+  background: none;
+  color: black;
+  font-size: 20px;
+  border: none;
+}
+.break {
+  width: 64.7%;
+  margin-left: 22.5rem;
+  margin-bottom: -3px;
+  background-color: gray;
+  opacity: 0.5;
+}
+.post_btn {
+  margin-top: -10px;
+  padding: 6px;
+  height: 38px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 0.7;
+  font-weight: bolder;
+}
+.post_btn img{
+  height: 10px;
+  width: 10px;
+  margin-right: .3rem;
+}
+.post_btn:active {
+  background: rgba(188, 187, 187, 0.775);
+}
+
+.prof_btn {
+  margin-top: -10px;
+  padding: 6px;
+  height: 38px;
+  border: none;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.prof_btn img{
+  height: 10px;
+  width: 10px;
+  margin-right: .3rem;
+}
+.prof_btn:active {
+  background: rgba(188, 187, 187, 0.775);
+  border-top: 1px solid black;
+}
+
+.post_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  font-size: 15px;
+  height: 50px;
+  padding-left: 168px;
+}
+
+.container {
+  margin-left: 15.5rem;
+  margin-top: -1.5rem;
+  margin-right: 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+  padding: 15px;
+  width: 60rem;
+  overflow: hidden;
+}
+
+.pic {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+.pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.pic:hover img {
+  transform: scale(1.05);
+}
+
+/* profile section steyling end  */
+
+/* footer part */
+footer {
+  margin-bottom: 53px;
+}
+.end,
+.last {
+  height: 20px;
+  margin-top: 20px;
+  margin-left: 125px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.end a {
+  all: unset;
+  font-size: smaller;
+  font-weight: normal;
+  opacity: 0.6;
+}
+.end a:hover {
+  border-bottom: 1px solid rgb(141, 140, 140);
+  cursor: pointer;
+}
+.last {
+  height: 20px;
+  margin-top: 1.5rem;
+  font-size: smaller;
+  font-weight: normal;
+  opacity: 0.6;
+}
